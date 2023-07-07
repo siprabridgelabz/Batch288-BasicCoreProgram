@@ -12,7 +12,8 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Programs");
             int n;
-            Console.WriteLine("Choose a option 1-flipcoin ,2-LeadYear,3-PowerOfTwo "+"4-Harmonic Number");
+            Console.WriteLine("Choose a option 1-flipcoin, 2-LeadYear ,3-PowerOfTwo " +
+                "4-Harmonic Number ,5-FactorofNumber");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -35,6 +36,11 @@ namespace BasicCoreProgram
                     Console.WriteLine("Harmonic Series Program");
                     Harmonic h = new Harmonic();
                     h.Series();
+                    break;
+                case 5:
+                    Console.WriteLine("FactorsofNumber Program");
+                    Factors factors = new Factors();
+                    factors.FactorOfnumber();
                     break;
                 default:
                     Console.WriteLine("Entered Wrong choice");
