@@ -22,6 +22,7 @@ namespace BasicCoreProgram
             Console.WriteLine("7-SwapingNumbers");
             Console.WriteLine("8-Even.Odd");
             Console.WriteLine("9-Alphabets");
+            Console.WriteLine("10-ComparingThreeNumbers");
             Console.WriteLine("\n");
 
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -75,6 +76,11 @@ namespace BasicCoreProgram
                    VowelAndConsonant vowelAndConsonant = new VowelAndConsonant();
 
                     vowelAndConsonant.Vowels();
+                    break;
+                case 10:
+                    Console.WriteLine("Comparing three numbers");
+                    LargestNumber largestNumber = new LargestNumber();
+                    largestNumber.Numbers();
                     break;
                 default:
                     Console.WriteLine("Entered Wrong choice");
