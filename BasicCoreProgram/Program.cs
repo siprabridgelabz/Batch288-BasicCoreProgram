@@ -10,10 +10,19 @@ namespace BasicCoreProgram
     {
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Welcome to Basic Programs");
-            int n;
-            Console.WriteLine("Choose a option 1-flipcoin, 2-LeadYear ,3-PowerOfTwo " +
-                "4-Harmonic Number ,5-FactorofNumber,6-Division,7-Swap Two Number");
+            Console.WriteLine("Enter your choice");
+            Console.WriteLine("1-flipcoin");
+            Console.WriteLine("2-LeadYear");
+            Console.WriteLine("3-PowerOfTwo");
+            Console.WriteLine("4-Harmonic Number");
+            Console.WriteLine("5-FactorofNumber");
+            Console.WriteLine("6-Division");
+            Console.WriteLine("7-SwapingNumbers");
+            Console.WriteLine("8-Even.Odd");
+            Console.WriteLine("\n");
+
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -52,6 +61,13 @@ namespace BasicCoreProgram
                     
                     SwapTwoNumber swap = new SwapTwoNumber();
                     swap.TwoNumbers(7, 2);
+                    break;
+                case 8:
+                    Console.WriteLine("Even or Odd Number Program");
+
+                    EvenOrOdd evenOrOdd = new EvenOrOdd();
+
+                    evenOrOdd.Odd();
                     break;
                 default:
                     Console.WriteLine("Entered Wrong choice");
