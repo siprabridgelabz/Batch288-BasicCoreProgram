@@ -13,7 +13,7 @@ namespace BasicCoreProgram
             Console.WriteLine("Welcome to Basic Programs");
             int n;
             Console.WriteLine("Choose a option 1-flipcoin, 2-LeadYear ,3-PowerOfTwo " +
-                "4-Harmonic Number ,5-FactorofNumber,6-Division");
+                "4-Harmonic Number ,5-FactorofNumber,6-Division,7-Swap Two Number");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -46,6 +46,12 @@ namespace BasicCoreProgram
                     Console.WriteLine("Division Program");
                     Division division = new Division();
                     division.Math(33, 2);
+                    break;
+                case 7:
+                    Console.WriteLine("Swap two Number Program");
+                    
+                    SwapTwoNumber swap = new SwapTwoNumber();
+                    swap.TwoNumbers(7, 2);
                     break;
                 default:
                     Console.WriteLine("Entered Wrong choice");
