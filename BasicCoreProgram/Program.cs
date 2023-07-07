@@ -12,7 +12,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Programs");
             int n;
-            Console.WriteLine("Choose a option 1-flipcoin 2-LeadYear ");
+            Console.WriteLine("Choose a option 1-flipcoin ,2-LeadYear,3-PowerOfTwo ");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -25,6 +25,11 @@ namespace BasicCoreProgram
                     Console.WriteLine("Lead Year");
                     LeapYear le = new LeapYear();
                     le.year();
+                    break;
+                case 3:
+                    Console.WriteLine("Power of two Program");
+                    Power power = new Power();
+                    power.Poweroftwo();
                     break;
                 default:
                     Console.WriteLine("Entered Wrong choice");
