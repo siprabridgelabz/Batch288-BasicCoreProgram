@@ -21,6 +21,7 @@ namespace BasicCoreProgram
             Console.WriteLine("6-Division");
             Console.WriteLine("7-SwapingNumbers");
             Console.WriteLine("8-Even.Odd");
+            Console.WriteLine("9-Alphabets");
             Console.WriteLine("\n");
 
             int choice = Convert.ToInt32(Console.ReadLine());
@@ -68,6 +69,12 @@ namespace BasicCoreProgram
                     EvenOrOdd evenOrOdd = new EvenOrOdd();
 
                     evenOrOdd.Odd();
+                    break;
+                case 9:
+                    Console.WriteLine("Consonants and vowels");
+                   VowelAndConsonant vowelAndConsonant = new VowelAndConsonant();
+
+                    vowelAndConsonant.Vowels();
                     break;
                 default:
                     Console.WriteLine("Entered Wrong choice");
