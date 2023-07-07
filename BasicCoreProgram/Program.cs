@@ -12,7 +12,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Programs");
             int n;
-            Console.WriteLine("Choose a option 1-flipcoin ,2-LeadYear,3-PowerOfTwo ");
+            Console.WriteLine("Choose a option 1-flipcoin ,2-LeadYear,3-PowerOfTwo "+"4-Harmonic Number");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -30,6 +30,11 @@ namespace BasicCoreProgram
                     Console.WriteLine("Power of two Program");
                     Power power = new Power();
                     power.Poweroftwo();
+                    break;
+                case 4:
+                    Console.WriteLine("Harmonic Series Program");
+                    Harmonic h = new Harmonic();
+                    h.Series();
                     break;
                 default:
                     Console.WriteLine("Entered Wrong choice");
